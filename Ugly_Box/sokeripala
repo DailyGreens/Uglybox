@@ -1,0 +1,60 @@
+
+        ------------|------------
+          kevi lamp | kevi input
+                    | kevi power
+        ------------|------------
+          blue lamp | blue input
+          blue pump | blue power
+        ------------|------------
+        brown relay | brown input
+                    | brown power
+        ------------|------------
+         brown lamp |
+                    |
+        ------------|------------
+         brown pump |
+                    |
+        ------------|------------
+                    |
+                    |
+        ------------|------------
+
+
+
+        ------------|------------
+                  1 | kevi input
+       ###          |
+       #------------|------------
+     oo#oo        2 | blue input
+     o #            |
+     o #------------|------------
+xxxxxox#xx        3 | brown input
+  xxxox#xx          |
+  x  o #------------|------------
+  x  o ###        4 | kevi power
+  x  o ###          |
+  x  o #------------|------------
+  x  oo#oo        5 | blue power
+  x  oo#oo          |
+  x  o #------------|------------
+  xxxox#xx        6 | brown power
+  xxxox#xx          |
+  x  o #------------|------------
+  x  o ###        7 | kevi lamp
+  x  o              |
+  x  o  ------------|------------
+  x  ooooo        8 | blue lamp
+  x  ooooo          |
+  x  o  ------------|------------
+  xxxoxxxx        9 | brown lamp
+     o              |
+     o  ------------|------------
+     ooooo       10 | blue pump
+                    |
+        ------------|------------
+xxxxxxxxxx       11 | brown pump
+                    |
+        ------------|------------
+                    |
+                    |
+        ------------|------------
