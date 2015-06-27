@@ -1,0 +1,26 @@
+FreeBSD 11 snapshot provided seems to work nicely out of the box
+
+Things I've configured so far:
+/boot/loader.conf
+/boot/loader.rc
+/etc/rc.conf
+/etc/rc.d/uglybox
+/root/uglybox.sh
+
+pkg // useless, no precompiled binaries exist yet
+portsnap
+
+ports:
+net/avahi-app
+dns/nss-mdns
+tmux
+
+https://gist.github.com/reidransom/6033227
+
+zsh?
+
+git?
+
+
+
+
