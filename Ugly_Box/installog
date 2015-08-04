@@ -1,0 +1,36 @@
+- boot with NOOBS
+- change user passwd to ellitestaa
+- select boot to console
+- locale fi_FI.UTF-8   <--- NOOOOOOOOOOOOOOO DO NOT DO THIS
+- timezone Europe/Helsinki
+- keyboard generic 105, other, finnish
+- enable ssh
+- finish reboot and love
+- log in
+- configure the network SSID dailygreens WPA-PSK dailyblackword
+  https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
+  - add the following to /etc/wpa_supplicant/wpa_supplicant.conf
+    network={
+        ssid="dailygreens"
+	psk="dailyblackword"
+    }
+    network={
+        ssid="Hacklab"
+	psk="saehkoe on sinistae ja sattuu"
+    }
+- edit /etc/hosts     < s/raspberrypi/dailygreens
+  sudo sed -ibkp 's/raspberrypi/dailygreens/' /etc/hosts
+- edit /etc/hostname  < s/raspberrypi/dailygreens
+  sudo sed -ibkp 's/raspberrypi/dailygreens/' /etc/hostname
+- make sure a network with ^ credentials is up and running somewhere
+- try to join the dailygreens network
+- add adafruit to apt running the following:
+    sudo -c "echo deb http://apt.adafruit.com/raspbian/ wheezy main >> /etc/apt/sources.list"
+    wget -O - -q https://apt.adafruit.com/apt.adafruit.com.gpg.key | sudo apt-key add -
+- apt-get update
+- apt-get install:
+  avahi-daemon  +
+  git           ?
+  nodejs        ?
+
+
